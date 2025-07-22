@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather ui</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>07:32 AM</h1>
+    <p id="wed">wednesday, 14 april 2021</p>
+    <div class="morning">
+        <div id="sun_icon">
+            <img id="sun" src="sun (2).png" alt="weather icon">
+        </div>
+        <div id="sun_heading">
+            <h2>Good Morning, Asif!</h2>
+        </div>
+    </div>
+
+    <div id="weekly_weather_conrainer">
+        <div class="weekly_weather">
+            <img class="weather_icon" src="sun (1).png" alt="weather icon">
+            <p>Sun</p>
+            <p>25°C</p>
+        </div>
+        <div class="weekly_weather">
+            <img class="weather_icon" src="rainy-day.png" alt="weather icon">
+            <p>Mon</p>
+            <p>17°C</p>
+        </div>
+        <div class="weekly_weather">
+            <img class="weather_icon" src="cloudy.png" alt="weather icon">
+            <p>Tue</p>
+            <p>20°C</p>
+        </div>
+        <div class="weekly_weather">
+            <img class="weather_icon" src="storm.png" alt="weather icon">
+            <p>Wed</p>
+            <p>29°C</p>
+        </div>
+        <div class="weekly_weather">
+            <img class="weather_icon" src="windy.png" alt="weather icon">
+            <p>Thu</p>
+            <p>22°C</p>
+        </div>
+        <div class="weekly_weather">
+            <img class="weather_icon" src="rain.png" alt="weather icon">
+            <p>Fri</p>
+            <p>16°C</p>
+        </div>
+    </div>
+    <div id="container">
+        <div id="whole_air_container">
+            <div id="air_quality_container">
+                <div class="air_quality_heading">
+                    <div id="air_quality">
+                        <h2>Air Quality Index</h2>
+                    </div>
+                    <div id="location">
+                        <img id="location_icon" src="placeholder.png" alt="air quality icon">
+                        <label for="location">Kolkata , </label>
+                        <select name="location choose" id="location_option">
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="gujrat">gujrat</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="good_heading_container">
+                    <div id="good_heading_icon">
+                        <div id="windy">
+                            <img id="wind_icon" src="wind.png" alt="good air quality icon">
+                        </div>
+                        <div id="good_heading">
+                            <h2 style="color: rgb(7, 156, 104);">Good</h2>
+                            <p>A Perfect Day For A Walk!</p>
+                        </div>
+                    </div>
+                    <div id="refresh_button">
+                        <button id="refresh" type="button">Refresh</button>
+                    </div>
+                </div>
+                <div id="wind_speed_container">
+                    <div class="wind_result">
+                        <h2>9.3</h2>
+                        <p>PMZ</p>
+                    </div>
+                    <div class="wind_result">
+                        <h2>12.2</h2>
+                        <p>PMZ</p>
+                    </div>
+                    <div class="wind_result">
+                        <h2>4.8</h2>
+                        <p>SO2</p>
+                    </div>
+                    <div class="wind_result">
+                        <h2>4.6</h2>
+                        <p>NO2</p>
+                    </div>
+                    <div class="wind_result">
+                        <h2>6.5</h2>
+                        <p>O2</p>
+                    </div>
+                    <div class="wind_result">
+                        <h2>0.9</h2>
+                        <p>CO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <div class="title">Monthly Rainfall</div>
+                    <div class="legend">
+                        <span>
+                            <div class="dot rain-dot"></div> Rain
+                        </span>
+                        <span>
+                            <div class="dot sun-dot"></div> Sun
+                        </span>
+                    </div>
+                </div>
+
+                <div class="chart">
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 60px;"></div>
+                        <div class="sun-segment" style="height: 40px; bottom: 60px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="sun-segment" style="height: 30px; bottom: 80px;"></div>
+                        <div class="rain-segment" style="height: 80px;"></div>
+                        
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 50px;"></div>
+                        <div class="sun-segment" style="height: 60px; bottom: 50px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 70px;"></div>
+                        <div class="sun-segment" style="height: 50px; bottom: 70px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 30px;"></div>
+                        <div class="sun-segment" style="height: 80px; bottom: 30px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 40px;"></div>
+                        <div class="sun-segment" style="height: 70px; bottom: 40px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 90px;"></div>
+                        <div class="sun-segment" style="height: 20px; bottom: 90px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 65px;"></div>
+                        <div class="sun-segment" style="height: 40px; bottom: 65px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 55px;"></div>
+                        <div class="sun-segment" style="height: 55px; bottom: 55px;"></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="total-bar"></div>
+                        <div class="rain-segment" style="height: 75px;"></div>
+                        <div class="sun-segment" style="height: 35px; bottom: 75px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sunrise_container">
+            <h2>Sunrise & Sunset</h2>
+            <div class="sunrise_sunset" id="sunrise_sunset">
+                <div class="location_box">
+                    <div class="area" id="kolkata">
+                        <img class="location_icon" src="gps.png" alt="kolkata icon">
+                    </div>
+                    <div class="heading" id="kolkata_header">
+                        <h2>Kolkata</h2>
+                    </div>
+                </div>
+                <div class="info_container">
+                    <div class="info">
+                        <div class="sunrise">
+                            <img class="sunrise_icon" src="sun (2).png" alt="sunrise icon">
+                        </div>
+                        <div class="sunset">
+                            <h4>Sunrise</h4>
+                            <h2>04:40 AM</h2>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="sunset">
+                            <img class="sunrise_icon" src="moon.png" alt="sunrise icon">
+                        </div>
+                        <div class="sunset">
+                            <h4>Sunset</h4>
+                            <h2>6:53 PM</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sunrise_sunset" id="sunrise_sunset">
+                <div class="location_box">
+                    <div class="area" id="chennai">
+                        <img class="location_icon" src="gps.png" alt="kolkata icon">
+                    </div>
+                    <div class="heading" id="chennai_header">
+                        <h2>Chennai</h2>
+                    </div>
+                </div>
+                <div class="info_container">
+                    <div class="info">
+                        <div class="sunrise">
+                            <img class="sunrise_icon" src="sun (2).png" alt="sunrise icon">
+                        </div>
+                        <div class="sunset">
+                            <h4>Sunrise</h4>
+                            <h2>04:47 AM</h2>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="sunset">
+                            <img class="sunrise_icon" src="moon.png" alt="sunrise icon">
+                        </div>
+                        <div class="sunset">
+                            <h4>Sunset</h4>
+                            <h2>6:49 PM</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information_container" id="information_container">
+                <div class="row">
+                    <div class="locationrow">
+                        <div class="information">
+                            <img class="img_location" src="location.png" alt="">
+                        </div>
+                        <div class="information_location">
+                            <h4>Kolkata</h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="sun (2).png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">5:00 AM</h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="moon.png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">7:00 PM</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="locationrow">
+                        <div class="information">
+                            <img class="img_location" src="location.png" alt="">
+                        </div>
+                        <div class="information_location">
+                            <h4>Chennai</h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="sun (2).png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">5:31 AM</h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="moon.png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">8:04 PM</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="locationrow">
+                        <div class="information">
+                            <img class="img_location" src="location.png" alt="">
+                        </div>
+                        <div class="information_location">
+                            <h4>Haryana </h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="sun (2).png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">5:50 AM</h4>
+                        </div>
+                    </div>
+                    <div class="locationrow2">
+                        <div class="information">
+                            <img class="img_info" src="moon.png" alt="">
+                        </div>
+                        <div class="information_time">
+                            <h4 class="timeclass">7:59 PM</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
