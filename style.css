@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #F1F5FF;
 }
 
 h1 {
-    font-size: 1.5em;
-    color: #397dcd;
+    font-size: 2.5em;
+    color: #6294ED;
 
     margin: 10px 0 10px 0;
 }
@@ -18,7 +18,7 @@ h1 {
 #wed {
     color: #000000;
     margin-top: 0.5rem;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -44,7 +44,7 @@ h1 {
 }
 
 #sun_heading {
-    color: #397dcd;
+    color: #6294ED;
     font-size: 16px;
     font-weight: 500;
 }
@@ -83,7 +83,7 @@ h1 {
 }
 
 .weekly_weather:hover {
-    background-color: #397dcd;
+    background-color: #6294ED;
     cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ select {
     width: 80px;
 
 
-    color: #16477f;
+    color: #6294ED;
 }
 
 #resfresh_button {
@@ -187,7 +187,7 @@ select {
     justify-content: center;
     width: 90px;
     height: 100px;
-    background-color: #c1ffbf;
+    background-color: #EBFFF6;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -195,16 +195,13 @@ select {
 
 .wind_result h2 {
     font-size: 17px;
+    color: rgb(10, 137, 76);
 }
 
 .wind_result p {
     font-size: 10px;
+    color: rgb(10, 137, 76);
 }
-
-#wind_speed_container .wind_result:not(:last-child) {
-    margin-right: 10px;
-}
-
 
 .card {
     background: white;
@@ -253,7 +250,7 @@ select {
 }
 
 .legend .rain-dot {
-    background: #397dcd;
+    background: #6294ED;
 }
 
 .legend .sun-dot {
@@ -291,7 +288,7 @@ select {
 }
 
 .rain-segment {
-    background: #3b82f6;
+    background: #6294ED;
     width: 8px;
     border-radius: 4px;
     position: absolute;
@@ -323,7 +320,7 @@ select {
 }
 
 .sunrise_sunset {
-    background-color: #feffca;
+    background-color: #FFF8EE;
     border-radius: 10px;
     padding: 16px;
     margin: 1rem 0;
@@ -349,7 +346,7 @@ select {
 
 .sunset h2 {
     font-size: 1rem;
-    color: #397dcd;
+    color: #6294ED;
 }
 
 .sunset h4 {
@@ -449,8 +446,9 @@ select {
     border-radius: 10px;
     align-items: center;
     width: 150px;
+    justify-content: space-between;
     padding: 8px;
-    background-color: #cbe9fd;
+    background-color: #F7F8FD;
     display: flex;
     margin: 5px 0 20px 0
 }
@@ -489,7 +487,7 @@ select {
 }
 
 .sunny_container {
-    background-color: rgb(0, 149, 255);
+    background-color: #78A5FF;
     border-radius: 16px;
     padding: 15px;
     color: white;
@@ -596,11 +594,11 @@ select {
 }
 
 #pink {
-    background-color: rgb(241, 63, 93);
+    background-color:#FE79AE;
 }
 
 #yellow {
-    background-color: #f59e0b;
+    background-color: #FEBA69;
 }
 
 .total {
@@ -640,7 +638,7 @@ select {
 }
 
 .light:hover {
-    background-color: #397dcd;
+    background-color: #6294ED;
 }
 
 .sun_moon {
@@ -738,10 +736,6 @@ select {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-    }
-
-    .search_location img {
-        margin-left: 250px;
     }
 
     .sunny_information {
@@ -887,9 +881,7 @@ select {
         box-sizing: border-box;
     }
 
-    .search_location img {
-        margin-left: auto;
-    }
+   
 
     .sunny_information {
         text-align: center;
@@ -920,7 +912,7 @@ select {
     }
 
     .wind_result {
-        width: 30%;
+        
         margin: 5px 1%;
     }
 
@@ -930,10 +922,9 @@ select {
         gap: 12px;
     }
 
-    .greet h1,
-    .timeclass,
-    .information_location h4 {
-        font-size: 1rem;
+    .greet h1
+   {
+        font-size: 2rem;
     }
 
     .weekly_weather {
@@ -959,17 +950,16 @@ select {
         gap: 30px;
     }
 
-    .wind_result {
-        width: 120px;
-        margin: 0 10px;
+    #wind_speed_container{
+        gap: 10px;
+    }
+    #weekly_weather_conrainer{
+        gap: 20px;
     }
 
-    .weekly_weather {
+    /* .weekly_weather {
         min-width: 110px;
-    }
+    } */
 
-    .information_location h4,
-    .timeclass {
-        font-size: 1.1rem;
-    }
+   
 }
