@@ -227,6 +227,15 @@ select {
     color: #333;
     font-size: 16px;
 }
+.footer_sunny_heading{
+    text-align: center;
+}
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
 
 .legend {
     display: flex;
@@ -794,12 +803,16 @@ select {
         justify-content: space-around;
     }
 
-    .pink_div {
-        height: auto;
-        flex-wrap: wrap;
-    }
+   .sunny_img , .pink_location_img {
+    height: 15px;
+    width: 15px;
 }
-
+.holder, .pink_location_total{
+    gap: 5px;
+}
+#footer_total, #footer1, #footer2{
+    padding-top: 0px;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -904,7 +917,7 @@ select {
         font-weight: 500;
     }
 }
-
+}
 
 @media screen and (min-width: 769px) and (max-width: 1199px) {
     .main_container {
