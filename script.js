@@ -68,7 +68,7 @@ function updatetoday() {
 updatetoday();
 
 
-const apiKey = '08924e661d0277afab9c2e640ffdbac0';
+const apiKey = '3859c0d05824900102fe9d47ca3771c9';
 
 
 
@@ -84,14 +84,13 @@ function getlocaion() {
     const lon = position.coords.longitude;
     const lat = position.coords.latitude;
 
-     const apiKey = '08924e661d0277afab9c2e640ffdbac0';
-    const url = "http://api.weatherstack.com/current?access_key=" + apiKey + "&query=" + lat + "," + lon;
-
+     const apiKey = '3859c0d05824900102fe9d47ca3771c9';
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     try {
       const response = await fetch(url);
       const data = await response.json();
 
-      if (data.success === false) {
+      if (data.cod!==200) {
         console.log("data is not fetching");
         return;
       }
@@ -113,10 +112,10 @@ function updatelocation(data){
   const wind=document.querySelector("#wind_id");
   const hum=document.querySelector("#hum_id");
 
-  const temp_data=data.current.temperature;
-  const desc_data=data.current.weather_descriptions[0];
-  const wind_data=data.current.wind_speed;
-  const hum_data=data.current.humidity;
+  const temp_data = data.main.temp;
+  const desc_data = data.weather[0].description;
+  const wind_data = data.wind.speed;
+  const hum_data = data.main.humidity;
 
   temp.textContent=`${temp_data}°C`;
   description.textContent=desc_data;
