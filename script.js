@@ -68,7 +68,7 @@ function updatetoday() {
 updatetoday();
 
 
-const apiKey = '3859c0d05824900102fe9d47ca3771c9';
+const apiKey = '2fb17a6da628a33f1c561a6d261cab78';
 
 
 
@@ -84,7 +84,7 @@ function getlocaion() {
     const lon = position.coords.longitude;
     const lat = position.coords.latitude;
 
-     const apiKey = '3859c0d05824900102fe9d47ca3771c9';
+     const apiKey = '2fb17a6da628a33f1c561a6d261cab78';
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     try {
       const response = await fetch(url);
